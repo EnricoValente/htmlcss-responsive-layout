@@ -1,0 +1,15 @@
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+:root {
+    --main-content-color: #0084FD;
+    --secondary-content-color: #B5DDFF;
+    --main-2-content-color: #9792E4;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

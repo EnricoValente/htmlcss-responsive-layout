@@ -1,0 +1,49 @@
+@import "reset.css";
+@import "general.css";
+
+            /* HEADER */
+
+
+header {
+    background-color: var(--main-content-color);
+}
+
+
+
+
+.container .header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links ul > li {
+    display: inline-block;
+    list-style: none;
+}
+
+.container .header-content > .links {
+    display: none;
+}
+
+
+
+
+/* RESPONSIVE */
+@media  screen and (min-width:768px) {
+    
+}
+
+
+
+
+@media screen and (min-width:992px) {
+    .container .header-content > .links {
+        display: inline-block;
+    }
+
+    .container .header-content > .hamburger-menu {
+        display: none;
+    }
+
+}
+
