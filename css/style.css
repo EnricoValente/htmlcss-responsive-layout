@@ -88,6 +88,23 @@ header {
 }
 
 
+/* SECTION 4 */
+.benefits {
+    background-color: var(--main-2-content-color);
+}
+
+.benefits h2 {
+    color: white;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.benefits .container .row .col {
+    background-color: white;
+}
+
+
+
 
 
 
@@ -120,6 +137,12 @@ header {
         width: calc(80% - .625rem);
     }
 
+    /* SECTION 4 */
+
+    .benefits .container .row .col {
+        width: calc(50% - 1.875rem);
+        margin: .9375rem;
+    }
 
 
     
@@ -147,6 +170,13 @@ header {
 
     .planning-col {
         width: calc(50% - 1.875rem);
+        margin: .9375rem;
+    }
+
+    /* SECTION 4 */
+
+    .benefits .container .row .col {
+        width: calc((100% / 3) - 1.875rem);
         margin: .9375rem;
     }
 
