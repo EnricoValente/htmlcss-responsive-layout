@@ -25,11 +25,40 @@ header {
     display: none;
 }
 
+/* MAIN */
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.9375rem;
+
+}
+
+.col {
+    width: calc(100% - 1.875rem);
+    margin: .9375rem;
+    background-color: var(--secondary-content-color);
+    border: .0625rem solid var(--secondary-content-color);
+}
 
 
 
 /* RESPONSIVE */
 @media  screen and (min-width:768px) {
+    .row {
+        align-items: stretch;
+    }
+
+    .col {
+        width: calc((100% / 3) - 1.875rem);
+        margin: .9375rem;
+    }
+
+    .col.big {
+        width: calc(((100% / 3)* 2) -1.875rem);
+        margin: .9375rem;
+    }
+
+
     
 }
 
