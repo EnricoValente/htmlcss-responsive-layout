@@ -40,6 +40,7 @@ header {
     border: .0625rem solid var(--secondary-content-color);
 }
 
+/* SECTION 2 */
 .planning-row {
     display: flex;
     flex-wrap: wrap;
@@ -58,10 +59,33 @@ header {
 
 }
 
+/* SECTION 3 */
+.testimonials .container h2 {
+    color: var(--main-2-content-color);
+    font-size: 2.0rem;
+    text-align: center;
+}
 
+.testimonials .container p {
+    text-align: center;
+    margin: 1.25rem 0;
+}
 
+.customer {
+    background-color: var(--main-2-content-color);
+    margin: 1.25rem;
+}
 
+.customer .customer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.customer .customer-col {
+    width: 100%;
+    text-align: center;
+    padding: 0 .625rem;
+}
 
 
 
@@ -72,6 +96,7 @@ header {
 
 /* RESPONSIVE */
 @media  screen and (min-width:768px) {
+    /* SECTION 1 */
     .row {
         align-items: stretch;
     }
@@ -86,6 +111,16 @@ header {
         margin: .9375rem;
     }
 
+    /* SECTION 3 */
+    .customer-col.photo {
+        width:calc(20% - .625rem);
+    }
+
+    .customer-col.text {
+        width: calc(80% - .625rem);
+    }
+
+
 
     
 }
@@ -94,6 +129,8 @@ header {
 
 
 @media screen and (min-width:992px) {
+
+    /* HEADER */
     .container .header-content > .links {
         display: inline-block;
     }
@@ -101,7 +138,7 @@ header {
     .container .header-content > .hamburger-menu {
         display: none;
     }
-
+    /* SECTION 2 */
     .planning-row {
         display: flex;
         justify-content: center;
