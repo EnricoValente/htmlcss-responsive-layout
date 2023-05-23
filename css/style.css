@@ -40,6 +40,34 @@ header {
     border: .0625rem solid var(--secondary-content-color);
 }
 
+.planning-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.9375rem;
+}
+
+.planning-col {
+    width: calc(100% - 1.875rem);
+    margin: .9375rem;
+    background-color: var(--main-2-content-color);
+    border: .0625rem solid var(--main-2-content-color);
+}
+
+.planning-col > img {
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* RESPONSIVE */
@@ -72,6 +100,17 @@ header {
 
     .container .header-content > .hamburger-menu {
         display: none;
+    }
+
+    .planning-row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .planning-col {
+        width: calc(50% - 1.875rem);
+        margin: .9375rem;
     }
 
 }
