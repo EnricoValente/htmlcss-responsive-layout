@@ -54,7 +54,7 @@ header {
     }
 
     .col.big {
-        width: calc(((100% / 3)* 2) -1.875rem);
+        width: calc(((100% / 3) * 2) - 1.875rem);
         margin: .9375rem;
     }
 
