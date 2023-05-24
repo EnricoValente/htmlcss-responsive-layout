@@ -51,6 +51,9 @@ header {
 }
 
 /* MAIN */
+main {
+    padding-top: 3.75rem;
+}
 
 /* SECTION 1 */
 
@@ -68,6 +71,7 @@ header {
     margin: .9375rem;
     background-color: var(--secondary-content-color);
     border: .0625rem solid var(--secondary-content-color);
+    border-radius: 2.5rem;
 }
 
 
@@ -125,6 +129,11 @@ header {
 }
 
 /* SECTION 2 */
+
+.planning {
+    background-color: var(--main-2-content-color);
+}
+
 .planning-row {
     display: flex;
     flex-wrap: wrap;
@@ -138,10 +147,57 @@ header {
     border: .0625rem solid var(--main-2-content-color);
 }
 
-.planning-col > img {
+.planning-col  img {
     width: 100%;
 
 }
+
+.planning-col > h2,p {
+    color: white;
+    text-align: center;
+    padding: 1.25rem 0;
+    line-height: 1.875rem;
+}
+
+.second-planning-img {
+    background-color: white;
+    border: .0625rem solid white;
+    border-radius: 2.5rem;
+}
+
+.second-planning-img > h3 {
+    text-align: center;
+    padding: .625rem;
+}
+
+.second-planning-img > p {
+    color: black;
+    text-align: center;
+    padding: .625rem;
+    line-height: 1.875rem;
+
+}
+
+
+
+.second-planning-img > a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+.second-planning-img a > i {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+   
+}
+    
+
+
 
 /* SECTION 3 */
 .testimonials .container h2 {
