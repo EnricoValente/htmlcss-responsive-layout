@@ -6,6 +6,9 @@
 
 header {
     background-color: var(--main-content-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 
@@ -16,9 +19,31 @@ header {
     justify-content: space-between;
 }
 
+.header-content .hamburger-menu {
+    color: white;
+    padding: .625rem;
+    font-size: 1.875rem;
+}
+
+
+.logo > img {
+    width: 100%;
+    padding: .625rem;
+}
+
+
 .links ul > li {
     display: inline-block;
     list-style: none;
+    margin-top: 1.25rem;
+    
+}
+
+.links ul li > a {
+    text-decoration: none;
+    color: white;
+    padding: .625rem;
+    
 }
 
 .container .header-content > .links {
@@ -26,10 +51,15 @@ header {
 }
 
 /* MAIN */
+
+/* SECTION 1 */
+
+
+
 .container .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -0.9375rem;
+    margin:0 -0.9375rem;
 
 }
 
@@ -38,6 +68,60 @@ header {
     margin: .9375rem;
     background-color: var(--secondary-content-color);
     border: .0625rem solid var(--secondary-content-color);
+}
+
+
+.row .col h3 {
+    color: var(--main-content-color);
+    text-align: center;
+    padding: .625rem;
+}
+
+.row .col > i {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.875rem;
+    color: var(--main-content-color);
+    padding: .625rem;
+}
+
+.row .col h3 + p {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+
+.demo-application > h3 {
+    color: var(--main-content-color);
+    padding: 1.25rem;
+    
+}
+
+
+.col.big .demo-application button {
+    background-color: var(--main-content-color);
+    border: .0625rem solid var(--main-content-color);
+    border-radius: 2.5rem;
+    margin: 1.25rem;
+    
+    
+}
+
+.col.big .demo-application button > a {
+    text-decoration: none;
+    color: white;
+    padding: .625rem;
+}
+
+.col.big .demo-application button > i {
+    padding-left: .625rem;
+    color: white;
+}
+
+
+.row .col.big .option-img > img {
+    width: 100%;
 }
 
 /* SECTION 2 */
@@ -188,6 +272,21 @@ header {
     /* HEADER */
     .container .header-content > .links {
         display: inline-block;
+    }
+
+
+    /* SECTION 1 */
+    .row .col.big {
+        display: flex;
+    }
+
+    .demo-application {
+        width: 50%;
+        padding-right: 1.25rem;
+    }
+
+    .option-img {
+        width: 50%;
     }
 
     .container .header-content > .hamburger-menu {
