@@ -206,7 +206,8 @@ main {
     text-align: center;
 }
 
-.testimonials .container p {
+.testimonials .container h2 + p {
+    color: black;
     text-align: center;
     margin: 1.25rem 0;
 }
@@ -214,17 +215,35 @@ main {
 .customer {
     background-color: var(--main-2-content-color);
     margin: 1.25rem;
+    border: .0625rem solid var(--main-2-content-color);
+    border-radius: 2.5rem;
 }
 
-.customer .customer-row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .customer .customer-col {
-    width: 100%;
     text-align: center;
     padding: 0 .625rem;
+    
+}
+
+.customer-col.photo img {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    padding: 1.25rem;
+    
+    
+}
+
+.customer-col.text {
+    color: white;
+    padding: 1.25rem;
+    
+}
+
+.customer-col.text > p {
+    color: white;
+    
 }
 
 
@@ -290,12 +309,16 @@ main {
     }
 
     /* SECTION 3 */
-    .customer-col.photo {
-        width:calc(20% - .625rem);
+    .customer-row {
+        display: flex;
     }
 
     .customer-col.text {
-        width: calc(80% - .625rem);
+        text-align: left;
+    }
+
+    .customer-col.text > p {
+        text-align: left;
     }
 
     /* SECTION 4 */
